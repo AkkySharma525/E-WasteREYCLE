@@ -1,11 +1,21 @@
-// Add any interactive features you want here
-// For example, smooth scrolling between sections
-document.querySelectorAll('nav ul li a').forEach(anchor => {
-    anchor.addEventListener('click', function(e) {
-        e.preventDefault();
+// Example of basic form validation
+document.addEventListener('DOMContentLoaded', (event) => {
+    const forms = document.querySelectorAll('form');
 
-        document.querySelector(this.getAttribute('href')).scrollIntoView({
-            behavior: 'smooth'
+    forms.forEach(form => {
+        form.addEventListener('submit', function(event) {
+            const formData = new FormData(this);
+            const data = {};
+            formData.forEach((value, key) => {
+                data[key] = value;
+            });
+            console.log('Form Data:', data);
+
+            // Example alert - remove or modify as needed
+            alert('Form submitted!');
+
+            // Prevent actual form submission for demo purposes
+            event.preventDefault();
         });
     });
 });
