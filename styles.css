@@ -41,8 +41,15 @@ nav ul li a:hover {
 section {
     padding: 20px;
     margin: 10px auto;
-    max-width: 800px;
+    max-width: 900px;
     background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.home-image {
+    width: 100%;
+    height: auto;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
@@ -51,32 +58,14 @@ h2 {
     color: #00796b;
 }
 
-.service-box {
-    background-color: #e0f2f1;
-    padding: 15px;
-    margin: 10px 0;
-    border-radius: 8px;
-    text-align: center;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-.service-box h3 {
-    margin: 0;
+h3 {
     color: #004d40;
 }
 
-.service-box a {
-    display: inline-block;
-    margin-top: 10px;
-    padding: 8px 12px;
-    background-color: #004d40;
-    color: white;
-    text-decoration: none;
-    border-radius: 4px;
-}
-
-.service-box a:hover {
-    background-color: #00332a;
+ul {
+    list-style-type: disc;
+    margin: 10px 0;
+    padding-left: 20px;
 }
 
 footer {
@@ -87,42 +76,4 @@ footer {
     position: relative;
     bottom: 0;
     width: 100%;
-}
-
-form {
-    display: flex;
-    flex-direction: column;
-}
-
-form label {
-    margin-bottom: 5px;
-    font-weight: bold;
-}
-
-form input[type="text"], 
-form input[type="email"], 
-form input[type="number"], 
-form textarea {
-    padding: 10px;
-    border: 1px solid #ddd;
-    border-radius: 4px;
-    margin-bottom: 15px;
-}
-
-form input[type="submit"] {
-    background-color: #009688;
-    color: white;
-    border: none;
-    padding: 12px;
-    border-radius: 4px;
-    cursor: pointer;
-    font-size: 16px;
-}
-
-form input[type="submit"]:hover {
-    background-color: #00796b;
-}
-
-textarea {
-    resize: vertical;
 }
