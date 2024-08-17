@@ -152,18 +152,43 @@ form button:hover {
 
 .team {
     display: flex;
-    justify-content: space-around;
+    flex-wrap: wrap;
+    justify-content: space-between;
     margin-top: 2rem;
 }
 
 .team-member {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    padding: 1rem;
     text-align: center;
+    margin: 1rem;
+    flex: 1 1 calc(33% - 2rem); /* Adjusts the width of each team member card */
+    max-width: calc(33% - 2rem); /* Ensures that team members are spaced evenly */
+    transition: transform 0.3s, box-shadow 0.3s; /* Smooth hover effects */
+}
+
+.team-member:hover {
+    transform: translateY(-10px); /* Lift effect on hover */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2); /* Stronger shadow on hover */
 }
 
 .team-member img {
     border-radius: 50%;
-    width: 150px;
-    height: 150px;
+    width: 120px; /* Adjusted size for better proportion */
+    height: 120px; /* Ensure image maintains a circular shape */
+    object-fit: cover; /* Ensures image fits well inside the circle */
+    margin-bottom: 1rem;
+}
+
+.team-member h3 {
+    color: #007bff;
+    margin: 0.5rem 0;
+}
+
+.team-member p {
+    color: #666;
 }
 
 #chat-button {
