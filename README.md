@@ -27,3 +27,5 @@ This project was created as:
 3. A demonstration of the potential impact of e-waste recycling.
 
 ---
+# Link to see my Project
+https://akkysharma525.github.io/E-WasteREYCLE/
